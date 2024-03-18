@@ -32,7 +32,7 @@ def visualize_dataset(dataset):
     
     # Histogram for numeric columns
     for column in numeric_columns:
-        st.write(f"Histogram of {column}:")
+        st.write(f" {column}:")
         plt.figure(figsize=(8, 6))
         sns.histplot(dataset[column], bins=20, kde=True)
         plt.xlabel(column)
